@@ -15,13 +15,37 @@
     "commands": [
       {
         "command": "tasktime-for-code.startTimer",
-        "title": "Start Timer"
+        "title": "Start Timer",
+        "icon": "./src/images/timer-start-svgrepo-com-light.svg"
       },
       {
         "command": "tasktime-for-code.stopTimer",
-        "title": "Stop Timer"
+        "title": "Stop Timer",
+        "icon": "./src/images/timer-stop-svgrepo-com-light.svg"
       }
-    ]
+    ],
+    "editor/context": [
+      {
+        "command": "tasktime-for-code.startTimer",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "tasktime-for-code.stopTimer",
+        "when": "editorTextFocus"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "tasktime-for-code.startTimer",
+          "group": "navigation"
+        },
+        {
+          "command": "tasktime-for-code.stopTimer",
+          "group": "navigation"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
