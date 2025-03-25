@@ -3,6 +3,10 @@
   "displayName": "tasktime-for-code",
   "description": "measure time to develop correct code",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eric3119/tasktime-for-code/"
+  },
   "engines": {
     "vscode": "^1.98.0"
   },
