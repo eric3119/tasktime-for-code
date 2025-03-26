@@ -49,6 +49,18 @@
           "group": "navigation"
         }
       ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "Run tasktime for code",
+      "properties": {
+        "tasktime-for-code.customCommand": {
+          "type": "string",
+          "default": "mvn clean test",
+          "description": "Set the custom command to run.",
+          "scope": "resource"
+        }
+      }
     }
   },
   "scripts": {

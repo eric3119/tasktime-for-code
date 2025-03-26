@@ -74,6 +74,8 @@ export function activate(context: vscode.ExtensionContext) {
         return;
       }
 
+      const config = vscode.workspace.getConfiguration('tasktime-for-code');
+
       vscode.window.showInformationMessage('Stop Timer!');
       vscode.window.showInformationMessage('Running tests...');
       const stopTime = new Date().getTime();
@@ -85,7 +87,11 @@ export function activate(context: vscode.ExtensionContext) {
 
       // Run shell command to check code correctness
       const exec = require('child_process').exec;
-      const command = `mvn clean test`;
+      const command = config.get<string>('customCommand');
+      if (!command) {
+        vscode.window.showInformationMessage('No command found');
+        return;
+      }
       exec(command, (error: any, stdout: any, stderr: any) => {
         if (error) {
           vscode.window.showInformationMessage('Tests failed');
