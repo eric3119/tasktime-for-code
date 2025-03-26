@@ -11,3 +11,8 @@ Features:
 Perfect for developers working with automation, testing, or background tasks.
 
 https://drive.google.com/file/d/12nDIpJVHMy50QUYlXWX95K5aFpWU2r_S/view?usp=drive_link
+
+## Compilation
+
+npx vsce package # Create a .vsix file
+code --install-extension tasktimer-0.0.1.vsix # Install the extension
