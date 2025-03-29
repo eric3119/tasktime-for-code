@@ -20,12 +20,12 @@
       {
         "command": "tasktime-for-code.startTimer",
         "title": "Start Timer",
-        "icon": "./src/images/timer-start-svgrepo-com-light.svg"
+        "icon": "./images/timer-start-svgrepo-com-light.svg"
       },
       {
         "command": "tasktime-for-code.stopTimer",
         "title": "Stop Timer",
-        "icon": "./src/images/timer-stop-svgrepo-com-light.svg"
+        "icon": "./images/timer-stop-svgrepo-com-light.svg"
       }
     ],
     "editor/context": [
