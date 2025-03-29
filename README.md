@@ -18,5 +18,5 @@ npx vsce package # Create a .vsix file
 ```
 
 ```bash
-code --install-extension tasktimer-0.0.1.vsix # Install the extension
+code --install-extension tasktime-for-code-0.0.1.vsix # Install the extension
 ```
